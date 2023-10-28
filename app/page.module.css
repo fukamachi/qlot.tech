@@ -26,7 +26,7 @@
 .installation {
   width: 100%;
   margin: 20px 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: hsla(0,0%,100%,.2);
   border-radius: 2px;
 }
 
