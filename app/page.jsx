@@ -1,7 +1,22 @@
+'use client';
 import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
+  const onClickInstallation = (e) => {
+    const node = e.target;
+    if (document.body.createTextRange) {
+      const range = document.body.createTextRange();
+      range.moveToElementText(node);
+      range.select();
+    } else if (window.getSelection) {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(node);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+  };
   return (
     <main className={styles.main}>
       <div className={styles.logo}>
@@ -9,7 +24,7 @@ export default function Home() {
       </div>
       <div className={styles.description}>Common Lisp library manager</div>
       <div className={styles.installation}>
-        <code>
+        <code onClick={onClickInstallation}>
           curl -L https://qlot.tech/installer | bash
         </code>
       </div>
