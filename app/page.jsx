@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.logo}>
-        <img src="/logo.png" alt="Qlot" />
+        <Image src="/logo.png" alt="Qlot" width={281} height={112} />
       </div>
       <div className={styles.description}>Common Lisp library manager</div>
       <div className={styles.installation}>
