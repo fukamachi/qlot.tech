@@ -16,6 +16,12 @@
 
 .logo {
   margin: 40px 0 0;
+  width: 281px;
+  height: 112px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .description {
@@ -26,15 +32,14 @@
 .installation {
   width: 100%;
   margin: 20px 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(200, 200, 200, 0.5);
   border-radius: 2px;
 }
 
 .installation code {
   display: block;
-  width: 800px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 10px;
   text-align: center;
 }
 .installation code:before {
@@ -61,4 +66,16 @@
   right: 10px;
   font-size: 40%;
   color: #aaa;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 60%;
+  }
+  .main {
+    font-size: 120%;
+  }
+  .description, .links {
+    margin: 20px 0;
+  }
 }
