@@ -8,3 +8,5 @@ export async function GET(request) {
   const installer = data.assets.find(asset => asset.name.match(/^qlot-installer-.+\.sh$/))
   redirect(installer.browser_download_url)
 }
+
+export const dynamic = 'force-dynamic';
