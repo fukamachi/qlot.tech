@@ -25,7 +25,7 @@ export default function Home() {
       <div className={styles.description}>Common Lisp library manager</div>
       <div className={styles.installation}>
         <code onClick={onClickInstallation}>
-          curl -L https://qlot.tech/installer | bash
+          curl -L https://qlot.tech/installer | sh
         </code>
       </div>
       <div className={styles.links}>
